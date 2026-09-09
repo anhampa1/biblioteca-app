@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empréstimos - Sistema de Gestão de Biblioteca</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>📚 Sistema de Gestão de Biblioteca</h1>
+      <nav>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/livros">Livros</a>
+        <a href="/autores">Autores</a>
+        <a href="/categorias">Categorias</a>
+        <a href="/membros">Membros</a>
+        <a href="/emprestimos">Empréstimos</a>
+        <a href="/logout">Sair</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Gerir Empréstimos</h2>
+
+    <form method="POST" action="/emprestimos" style="margin-bottom: 2rem;">
+      <h3>Registar Novo Empréstimo</h3>
+      <div class="form-group">
+        <label for="livro_id">Livro:</label>
+        <select id="livro_id" name="livro_id" required>
+          <option value="">Selecionar Livro</option>
+          <option value="1">Quincas Borba</option>
+          <option value="2">Os Lusíadas</option>
+          <option value="3">O Alquimista</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="membro_id">Membro:</label>
+        <select id="membro_id" name="membro_id" required>
+          <option value="">Selecionar Membro</option>
+          <option value="1">João Silva</option>
+          <option value="2">Maria Santos</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="data_emprestimo">Data de Empréstimo:</label>
+        <input type="date" id="data_emprestimo" name="data_emprestimo" required>
+      </div>
+      <div class="form-group">
+        <label for="data_devolucao_prevista">Data de Devolução Prevista:</label>
+        <input type="date" id="data_devolucao_prevista" name="data_devolucao_prevista" required>
+      </div>
+      <button type="submit" class="btn">Registar Empréstimo</button>
+    </form>
+
+    <h3>Lista de Empréstimos</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Livro</th>
+          <th>Membro</th>
+          <th>Data Empréstimo</th>
+          <th>Data Devolução</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- EMPRESTIMOS -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
