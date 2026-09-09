@@ -1,0 +1,26 @@
+{
+  "name": "biblioteca-app",
+  "version": "1.0.0",
+  "description": "Sistema de Gestão de Biblioteca - Trabalho Avaliação III DAWE",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "keywords": [
+    "biblioteca",
+    "gestão",
+    "node.js",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anhampa1/biblioteca-app.git"
+  }
+}
