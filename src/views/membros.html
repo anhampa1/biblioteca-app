@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membros - Biblioteca</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>📚 Sistema de Gestão de Biblioteca</h1>
+      <nav>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/livros">Livros</a>
+        <a href="/autores">Autores</a>
+        <a href="/categorias">Categorias</a>
+        <a href="/membros">Membros</a>
+        <a href="/emprestimos">Empréstimos</a>
+        <a href="/logout">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Gerir Membros</h2>
+
+    <form method="POST" action="/membros">
+      <h3>Adicionar Novo Membro</h3>
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone">
+      </div>
+      <div class="form-group">
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco">
+      </div>
+      <button type="submit" class="btn">Adicionar Membro</button>
+    </form>
+
+    <h3>Membros Registados</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- MEMBROS -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
